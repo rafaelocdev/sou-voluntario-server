@@ -204,6 +204,12 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
     ]
     ```
 
+    -> Possíveis erros
+
+    - "Missing authorization header" -> Token não informado;
+
+    </br>
+
   - ### _Atualização profile voluntário_
 
     -> PATCH /users/:userId - Formato da requisição:
@@ -227,6 +233,12 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
       "id": 1
     }
     ```
+
+    -> Possíveis erros
+
+    - "Missing authorization header" -> Token não informado;
+
+    </br>
 
   - ### _Listagem de eventos em que o voluntário está inscrito_
 
@@ -271,6 +283,10 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
       }
     ]
     ```
+
+    -> Possíveis erros
+
+    - "Missing authorization header" -> Token não informado;
 
 <br/>
 <br/>
@@ -321,6 +337,12 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
     ]
     ```
 
+    -> Possíveis erros
+
+    - "Missing authorization header" -> Token não informado;
+
+    </br>
+
   - ### _Atualização profile instituição_
 
     -> PATCH /users/:userId - Formato da requisição:
@@ -345,39 +367,51 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
     }
     ```
 
+    -> Possíveis erros
+
+    - "Missing authorization header" -> Token não informado;
+
+    </br>
+
   - ### _Listagem de todas as instituições_
 
-        -> PATCH /users?user-type_like=ong - Formato da requisição: sem corpo
+    -> PATCH /users?user-type_like=ong - Formato da requisição: sem corpo
 
-        -> Status code 201 - Formato da resposta:
+    -> Status code 201 - Formato da resposta:
 
-        ```json
-        [
-          {
-            "email": "ong@mail.com",
-            "password": "$2a$10$s2LDHIgDs9Gb9u/VxhmdBOBgM4UCHz6y/gvugbdRhO0NKzC85xBZ.",
-            "name": "ONG",
-            "user-type": "ong",
-            "id": 1
-          },
-          {
-            "email": "ong3@mail.com",
-            "password": "$2a$10$tFi.DVsXNqUdudCSb.IpV.SbnvV5T3ZGgiItMKNSnz/BML8QCPVMi",
-            "name": "ONG3",
-            "user-type": "ong",
-            "id": 3
-          },
-          {
-            "email": "ong1@mail.com",
-            "password": "$2a$10$lPyWyffJjJi2B.ceHBeF7e32f3ffcmKcZRcQEZPTC5LLqGBsg0axu",
-            "name": "ONG1",
-            "user-type": "ong",
-            "category": "education",
-            "ceṕ": "12345-678",
-            "id": 6
-          }
-        ]
-        ```
+    ```json
+    [
+      {
+        "email": "ong@mail.com",
+        "password": "$2a$10$s2LDHIgDs9Gb9u/VxhmdBOBgM4UCHz6y/gvugbdRhO0NKzC85xBZ.",
+        "name": "ONG",
+        "user-type": "ong",
+        "id": 1
+      },
+      {
+        "email": "ong3@mail.com",
+        "password": "$2a$10$tFi.DVsXNqUdudCSb.IpV.SbnvV5T3ZGgiItMKNSnz/BML8QCPVMi",
+        "name": "ONG3",
+        "user-type": "ong",
+        "id": 3
+      },
+      {
+        "email": "ong1@mail.com",
+        "password": "$2a$10$lPyWyffJjJi2B.ceHBeF7e32f3ffcmKcZRcQEZPTC5LLqGBsg0axu",
+        "name": "ONG1",
+        "user-type": "ong",
+        "category": "education",
+        "ceṕ": "12345-678",
+        "id": 6
+      }
+    ]
+    ```
+
+    -> Possíveis erros
+
+    - "Missing authorization header" -> Token não informado;
+
+    </br>
 
     </br>
 
@@ -437,7 +471,7 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
     - "Missing user-type header" -> Tipo de usuário não informado.
     - "Unauthorized" -> Usuário do tipo "voluntary" tentando criar evento.
 
-  </br>
+    </br>
 
   - ### _Atualização de evento_
 
@@ -472,6 +506,12 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
     }
     ```
 
+    -> Possíveis erros
+
+    - "Missing authorization header" -> Token não informado;
+
+    </br>
+
   - ### _Inscrevendo-se em um evento_
 
     -> PATCH /events/:eventId - Formato da requisição:
@@ -498,8 +538,20 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
     }
     ```
 
+    -> Possíveis erros
+
+    - "Missing authorization header" -> Token não informado;
+
+    </br>
+
   - ### _Excluindo um evento_
 
     -> DELETE /events/:eventId - Formato da requisição: sem corpo
 
     -> Status code 200 - Formato da resposta: sem corpo
+
+    -> Possíveis erros
+
+    - "Missing authorization header" -> Token não informado;
+
+    </br>
