@@ -27,19 +27,70 @@
       "name": "Thatiane",
       "user-type": "voluntary",
       "id": 4
+    },
+    {
+      "email": "johndoe@mail.com",
+      "password": "$2a$10$esaUGGcMZEMq29lXQoHqiOxJUh3Sfa8/6tv5ix.aCJh5YhGJ9aw2O",
+      "name": "John Doe",
+      "user-type": "voluntary",
+      "id": 5
+    },
+    {
+      "email": "ong1@mail.com",
+      "password": "$2a$10$lPyWyffJjJi2B.ceHBeF7e32f3ffcmKcZRcQEZPTC5LLqGBsg0axu",
+      "name": "ONG1",
+      "user-type": "ong",
+      "category": "education",
+      "ceṕ": "12345-678",
+      "id": 6
     }
   ],
   "events": [
     {
-      "title": "Agente de Biblioteca ",
+      "title": "Agente de Biblioteca 9",
       "description": "Buscamos pessoa para colaborar na organização, catalogação de uma biblioteca organizada e para mantê-la aberta. Vamos juntos!",
       "work-type": "donation",
       "category": "education",
       "state": "São Paulo",
       "completed": "false",
-      "voluntaries": [4],
+      "voluntaries": [
+        2
+      ],
       "userId": "1",
-      "id": 1
+      "id": 3
+    },
+    {
+      "title": "Agente de Biblioteca 9",
+      "description": "Buscamos pessoa para colaborar na organização, catalogação de uma biblioteca organizada e para mantê-la aberta. Vamos juntos!",
+      "work-type": "donation",
+      "category": "education",
+      "state": "São Paulo",
+      "completed": "false",
+      "voluntaries": [],
+      "userId": "1",
+      "id": 4
+    },
+    {
+      "title": "Agente de Biblioteca 9",
+      "description": "Buscamos pessoa para colaborar na organização, catalogação de uma biblioteca organizada e para mantê-la aberta. Vamos juntos!",
+      "work-type": "donation",
+      "category": "education",
+      "state": "São Paulo",
+      "completed": "false",
+      "voluntaries": [],
+      "userId": "1",
+      "id": 5
+    },
+    {
+      "title": "Agente de Biblioteca 9",
+      "description": "Buscamos pessoa para colaborar na organização, catalogação de uma biblioteca organizada e para mantê-la aberta. Vamos juntos!",
+      "work-type": "donation",
+      "category": "education",
+      "state": "São Paulo",
+      "completed": "false",
+      "voluntaries": [],
+      "userId": "1",
+      "id": 6
     }
   ]
 }
