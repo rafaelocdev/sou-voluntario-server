@@ -15,6 +15,13 @@
       "name": "John Doe",
       "userType": "voluntary",
       "id": 2
+    },
+    {
+      "email": "johndoe@mail.com",
+      "password": "$2a$10$9Fxoe2Z3kG6CjBVyRXgUWugDZ3QXUs2yozSwuCE0ifbiCW8Gb/9aS",
+      "name": "John Doe",
+      "userType": "voluntary",
+      "id": 3
     }
   ],
   "events": [
@@ -27,9 +34,12 @@
       "category": "education",
       "state": "São Paulo",
       "completed": false,
-      "voluntaries": [],
+      "voluntaries": [
+        3
+      ],
       "ongName": "ONG",
-      "userId": "1"
+      "userId": "1",
+      "id": 1
     },
     {
       "title": "Agente de Biblioteca Concluído",
@@ -40,9 +50,28 @@
       "category": "education",
       "state": "São Paulo",
       "completed": false,
-      "voluntaries": [],
+      "voluntaries": [
+        3
+      ],
       "ongName": "ONG",
-      "userId": "1"
+      "userId": "1",
+      "id": 2
+    },
+    {
+      "title": "Agente de Biblioteca Concluido",
+      "description": "Buscamos pessoa para colaborar na organização, catalogação de uma biblioteca organizada e para mantê-la aberta. Vamos juntos!",
+      "workType": "volunteering",
+      "donationGoal": 0,
+      "amountDonated": 0,
+      "category": "education",
+      "state": "São Paulo",
+      "completed": false,
+      "voluntaries": [
+        3
+      ],
+      "ongName": "ONG",
+      "userId": "1",
+      "id": 3
     }
   ]
 }
