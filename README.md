@@ -31,7 +31,7 @@ Esta API possui um total de 14 endpoints destinados a cadastro, login e atualiza
     "email": "johndoe@mail.com",
     "password": "123456",
     "name": "John Doe",
-    "user-type": "voluntary"
+    "userType": "voluntary"
   }
   ```
 
@@ -43,7 +43,7 @@ Esta API possui um total de 14 endpoints destinados a cadastro, login e atualiza
     "user": {
       "email": "johndoe@mail.com",
       "name": "John Doe",
-      "user-type": "voluntary",
+      "userType": "voluntary",
       "id": 5
     }
   }
@@ -60,9 +60,9 @@ Esta API possui um total de 14 endpoints destinados a cadastro, login e atualiza
     "email": "ong@mail.com",
     "password": "123456",
     "name": "Organização Não Governamental - ONG",
-    "user-type": "ong",
+    "userType": "ong",
     "category": "education",
-    "ceṕ": "12345-678"
+    "cep": "12345-678"
   }
   ```
 
@@ -74,7 +74,7 @@ Esta API possui um total de 14 endpoints destinados a cadastro, login e atualiza
     "user": {
       "email": "ong1@mail.com",
       "name": "ONG1",
-      "user-type": "ong",
+      "userType": "ong",
       "category": "education",
       "ceṕ": "12345-678",
       "id": 6
@@ -109,7 +109,7 @@ Esta API possui um total de 14 endpoints destinados a cadastro, login e atualiza
     "user": {
       "email": "johndoe@mail.com",
       "name": "John Doe",
-      "user-type": "ong",
+      "userType": "ong",
       "id": 1
     }
   }
@@ -134,10 +134,10 @@ Esta API possui um total de 14 endpoints destinados a cadastro, login e atualiza
     {
       "title": "Agente de Biblioteca ",
       "description": "Buscamos pessoa para colaborar na organização, catalogação de uma biblioteca organizada e para mantê-la aberta. Vamos juntos!",
-      "work-type": "donation",
+      "workType": "donation",
       "category": "education",
       "state": "São Paulo",
-      "completed": "false",
+      "completed": false,
       "voluntaries": [4],
       "userId": "1",
       "id": 1
@@ -145,10 +145,10 @@ Esta API possui um total de 14 endpoints destinados a cadastro, login e atualiza
     {
       "title": "Agente de Biblioteca 5",
       "description": "Buscamos pessoa para colaborar na organização, catalogação de uma biblioteca organizada e para mantê-la aberta. Vamos juntos!",
-      "work-type": "donation",
+      "workType": "donation",
       "category": "education",
       "state": "São Paulo",
-      "completed": "false",
+      "completed": false,
       "voluntaries": [],
       "userId": "1",
       "id": 2
@@ -180,7 +180,7 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
 
   - ### _Listagem de todos os Voluntários_
 
-    -> GET /users?user-type_like=voluntary - Formato da requisição: sem corpo
+    -> GET /users?userType_like=voluntary - Formato da requisição: sem corpo
 
     -> Status code 201 - Formato da resposta:
 
@@ -190,21 +190,21 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
         "email": "johndoe1@mail.com",
         "password": "$2a$10$s6qGUM5J7ovRU3n/C9f/JeskQRXlnBgPdFb9DftTPtLQTXoTBbhXC",
         "name": "John Doe 1",
-        "user-type": "voluntary",
+        "userType": "voluntary",
         "id": 2
       },
       {
         "email": "johndoe2@mail.com",
         "password": "$2a$10$NVe7mjwP4yM6lk7IO2XsX.OqzA3zFv64zH7Zv6lxnHG/um0uEbIDu",
         "name": "John Doe 2",
-        "user-type": "voluntary",
+        "userType": "voluntary",
         "id": 4
       },
       {
         "email": "johndoe3@mail.com",
         "password": "$2a$10$esaUGGcMZEMq29lXQoHqiOxJUh3Sfa8/6tv5ix.aCJh5YhGJ9aw2O",
         "name": "John Doe 3",
-        "user-type": "voluntary",
+        "userType": "voluntary",
         "id": 5
       }
     ]
@@ -235,7 +235,7 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
       "email": "voluntary@mail.com",
       "password": "$2a$10$s6qGUM5J7ovRU3n/C9f/JeskQRXlnBgPdFb9DftTPtLQTXoTBbhXC",
       "name": "Voluntary",
-      "user-type": "voluntary",
+      "userType": "voluntary",
       "id": 1
     }
     ```
@@ -257,10 +257,10 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
       {
         "title": "Agente de Biblioteca ",
         "description": "Buscamos pessoa para colaborar na organização, catalogação de uma biblioteca organizada e para mantê-la aberta. Vamos juntos!",
-        "work-type": "donation",
+        "workType": "donation",
         "category": "education",
         "state": "São Paulo",
-        "completed": "false",
+        "completed": false,
         "voluntaries": [2],
         "userId": "1",
         "id": 1
@@ -268,10 +268,10 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
       {
         "title": "Agente de Biblioteca 5",
         "description": "Buscamos pessoa para colaborar na organização, catalogação de uma biblioteca organizada e para mantê-la aberta. Vamos juntos!",
-        "work-type": "donation",
+        "workType": "donation",
         "category": "education",
         "state": "São Paulo",
-        "completed": "false",
+        "completed": false,
         "voluntaries": [2, 4],
         "userId": "1",
         "id": 2
@@ -279,13 +279,47 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
       {
         "title": "Agente de Biblioteca 9",
         "description": "Buscamos pessoa para colaborar na organização, catalogação de uma biblioteca organizada e para mantê-la aberta. Vamos juntos!",
-        "work-type": "donation",
+        "workType": "donation",
         "category": "education",
         "state": "São Paulo",
-        "completed": "false",
+        "completed": false,
         "voluntaries": [2],
         "userId": "1",
         "id": 3
+      }
+    ]
+    ```
+
+    -> Possíveis erros
+
+    - "Missing authorization header" -> Token não informado;
+
+  <br/>
+
+  - ### _Listagem de eventos em que o voluntário está inscrito filtrados por status_
+
+    -> GET /events?voluntaries_like=[:userId]&completed_like=:status- Formato da requisição: sem corpo
+
+    Obs: O valor do status sempre deve ser true ou false
+
+    -> Status code 201 - Formato da resposta:
+
+    ```json
+    [
+      {
+        "title": "Agente de Biblioteca Concluido",
+        "description": "Buscamos pessoa para colaborar na organização, catalogação de uma biblioteca organizada e para mantê-la aberta. Vamos juntos!",
+        "work-type": "donation",
+        "category": "education",
+        "state": "São Paulo",
+        "completed": false,
+        "voluntaries": [5],
+        "userId": "1",
+        "id": 3,
+        "workType": "volunteering",
+        "donationGoal": 2000,
+        "amountDonated": 0,
+        "ongName": "ONG"
       }
     ]
     ```
@@ -308,37 +342,32 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
     ```json
     [
       {
-        "title": "Agente de Biblioteca ",
+        "title": "Agente de Biblioteca Concluido",
         "description": "Buscamos pessoa para colaborar na organização, catalogação de uma biblioteca organizada e para mantê-la aberta. Vamos juntos!",
-        "work-type": "donation",
+        "work-type": "volunteering",
+        "donation-goal": 2000,
+        "donation-value": 0,
         "category": "education",
         "state": "São Paulo",
         "completed": "false",
-        "voluntaries": [2],
+        "voluntaries": [5],
+        "ong-name": "ONG",
         "userId": "1",
         "id": 1
       },
       {
-        "title": "Agente de Biblioteca 5",
+        "title": "Agente de Biblioteca Concluido",
         "description": "Buscamos pessoa para colaborar na organização, catalogação de uma biblioteca organizada e para mantê-la aberta. Vamos juntos!",
-        "work-type": "donation",
+        "work-type": "volunteering",
+        "donation-goal": 2000,
+        "donation-value": 0,
         "category": "education",
         "state": "São Paulo",
         "completed": "false",
-        "voluntaries": [2, 4],
+        "voluntaries": [5],
+        "ong-name": "ONG",
         "userId": "1",
         "id": 2
-      },
-      {
-        "title": "Agente de Biblioteca 9",
-        "description": "Buscamos pessoa para colaborar na organização, catalogação de uma biblioteca organizada e para mantê-la aberta. Vamos juntos!",
-        "work-type": "donation",
-        "category": "education",
-        "state": "São Paulo",
-        "completed": "false",
-        "voluntaries": [2],
-        "userId": "1",
-        "id": 3
       }
     ]
     ```
@@ -347,7 +376,56 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
 
     - "Missing authorization header" -> Token não informado;
 
-    </br>
+      </br>
+
+  - ### _Listagem de eventos criados pela instituição filtrados por status_
+
+    -> GET /users/:userId/events?completed_like=:status - Formato da requisição: sem corpo
+
+    Obs: O valor do status sempre deve ser true ou false
+
+    -> Status code 201 - Formato da resposta:
+
+    ```json
+    [
+      {
+        "title": "Agente de Biblioteca Concluido",
+        "description": "Buscamos pessoa para colaborar na organização, catalogação de uma biblioteca organizada e para mantê-la aberta. Vamos juntos!",
+        "work-type": "donation",
+        "category": "education",
+        "state": "São Paulo",
+        "completed": false,
+        "voluntaries": [5],
+        "userId": "1",
+        "id": 1,
+        "workType": "volunteering",
+        "donationGoal": 2000,
+        "amountDonated": 0,
+        "ongName": "ONG"
+      },
+      {
+        "title": "Agente de Biblioteca Concluido",
+        "description": "Buscamos pessoa para colaborar na organização, catalogação de uma biblioteca organizada e para mantê-la aberta. Vamos juntos!",
+        "work-type": "donation",
+        "category": "education",
+        "state": "São Paulo",
+        "completed": false,
+        "voluntaries": [5],
+        "userId": "1",
+        "id": 2,
+        "workType": "volunteering",
+        "donationGoal": 2000,
+        "amountDonated": 0,
+        "ongName": "ONG"
+      }
+    ]
+    ```
+
+    -> Possíveis erros
+
+    - "Missing authorization header" -> Token não informado;
+
+      </br>
 
   - ### _Atualização profile instituição_
 
@@ -368,7 +446,7 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
       "email": "ong@mail.com",
       "password": "$2a$10$s6qGUM5J7ovRU3n/C9f/JeskQRXlnBgPdFb9DftTPtLQTXoTBbhXC",
       "name": "ONG",
-      "user-type": "ong",
+      "userType": "ong",
       "id": 1
     }
     ```
@@ -381,7 +459,7 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
 
   - ### _Listagem de todas as instituições_
 
-    -> PATCH /users?user-type_like=ong - Formato da requisição: sem corpo
+    -> PATCH /users?userType_like=ong - Formato da requisição: sem corpo
 
     -> Status code 201 - Formato da resposta:
 
@@ -391,21 +469,21 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
         "email": "ong@mail.com",
         "password": "$2a$10$s2LDHIgDs9Gb9u/VxhmdBOBgM4UCHz6y/gvugbdRhO0NKzC85xBZ.",
         "name": "ONG",
-        "user-type": "ong",
+        "userType": "ong",
         "id": 1
       },
       {
         "email": "ong3@mail.com",
         "password": "$2a$10$tFi.DVsXNqUdudCSb.IpV.SbnvV5T3ZGgiItMKNSnz/BML8QCPVMi",
         "name": "ONG3",
-        "user-type": "ong",
+        "userType": "ong",
         "id": 3
       },
       {
         "email": "ong1@mail.com",
         "password": "$2a$10$lPyWyffJjJi2B.ceHBeF7e32f3ffcmKcZRcQEZPTC5LLqGBsg0axu",
         "name": "ONG1",
-        "user-type": "ong",
+        "userType": "ong",
         "category": "education",
         "ceṕ": "12345-678",
         "id": 6
@@ -425,20 +503,7 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
 
   - ### _Criação de eventos_
 
-    -> POST /events - Formato da requisição:
-
-    ```json
-    {
-      "title": "Agente de Biblioteca 9",
-      "description": "Buscamos pessoa para colaborar na organização, catalogação de uma biblioteca organizada e para mantê-la aberta. Vamos juntos!",
-      "work-type": "donation",
-      "category": "education",
-      "state": "São Paulo",
-      "completed": "false",
-      "voluntaries": [],
-      "userId": "1"
-    }
-    ```
+    AVISO: Somente usuários do tipo "ong" podem criar eventos.
 
     -> No header desta requisição além da chave Authorization, é necessário enviar o tipo de usuário da seguinte maneira:
 
@@ -446,14 +511,28 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
     {
       headers: {
         Authorization: `Bearer ${token}`;
-        "user-type": `${user.[user-type]}`
+        "userType": `${user.[userType]}`
       }
     }
     ```
 
-    AVISO: Somente usuários do tipo "ong" podem criar eventos.
+    -> POST /events - Formato da requisição:
 
-    </br>
+    ```json
+    {
+      "title": "Agente de Biblioteca 9",
+      "description": "Buscamos pessoa para colaborar na organização, catalogação de uma biblioteca organizada e para mantê-la aberta. Vamos juntos!",
+      "workType": "donation",
+      "donationGoal": 2000,
+      "amountDonated": 0,
+      "category": "education",
+      "state": "São Paulo",
+      "completed": false,
+      "voluntaries": [],
+      "ongName": "ONG",
+      "userId": "1"
+    }
+    ```
 
     -> Status code 201 - Formato da resposta:
 
@@ -461,12 +540,15 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
     {
       "title": "Agente de Biblioteca 9",
       "description": "Buscamos pessoa para colaborar na organização, catalogação de uma biblioteca organizada e para mantê-la aberta. Vamos juntos!",
-      "work-type": "donation",
+      "workType": "donation",
+      "donationGoal": 2000,
+      "amountDonated": 0,
       "category": "education",
       "state": "São Paulo",
-      "completed": "false",
+      "completed": false,
       "voluntaries": [],
-      "userId": "1",
+      "ongName": "ONG",
+      "userId": "1"
       "id": 4
     }
     ```
@@ -474,10 +556,10 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
     -> Possíveis erros
 
     - "Missing authorization header" -> Token não informado;
-    - "Missing user-type header" -> Tipo de usuário não informado.
+    - "Missing userType header" -> Tipo de usuário não informado.
     - "Unauthorized" -> Usuário do tipo "voluntary" tentando criar evento.
 
-    </br>
+      </br>
 
   - ### _Atualização de evento_
 
@@ -485,13 +567,16 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
 
     ```json
     {
-      "title": "Agente de Biblioteca 9",
+      "title": "Agente de Biblioteca Concluido",
       "description": "Buscamos pessoa para colaborar na organização, catalogação de uma biblioteca organizada e para mantê-la aberta. Vamos juntos!",
-      "work-type": "donation",
+      "workType": "volunteering",
+      "donationGoal": 2000,
+      "amountDonated": 0,
       "category": "education",
       "state": "São Paulo",
-      "completed": "false",
-      "voluntaries": []
+      "completed": true,
+      "voluntaries": [5],
+      "ongName": "ONG"
     }
     // Utilizar somente os campos que sofrerão alteração
     ```
@@ -500,15 +585,19 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
 
     ```json
     {
-      "title": "Agente de Biblioteca 9",
+      "title": "Agente de Biblioteca Concluido",
       "description": "Buscamos pessoa para colaborar na organização, catalogação de uma biblioteca organizada e para mantê-la aberta. Vamos juntos!",
-      "work-type": "donation",
+      "workType": "donation",
       "category": "education",
       "state": "São Paulo",
-      "completed": "false",
-      "voluntaries": [],
+      "completed": true,
+      "voluntaries": [5],
       "userId": "1",
-      "id": 1
+      "id": 3,
+      "workType": "volunteering",
+      "donationGoal": 2000,
+      "amountDonated": 0,
+      "ongName": "ONG"
     }
     ```
 
@@ -516,7 +605,7 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
 
     - "Missing authorization header" -> Token não informado;
 
-    </br>
+      </br>
 
   - ### _Inscrevendo-se em um evento_
 
@@ -534,10 +623,10 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
     {
       "title": "Agente de Biblioteca 9",
       "description": "Buscamos pessoa para colaborar na organização, catalogação de uma biblioteca organizada e para mantê-la aberta. Vamos juntos!",
-      "work-type": "donation",
+      "workType": "donation",
       "category": "education",
       "state": "São Paulo",
-      "completed": "false",
+      "completed": false,
       "voluntaries": [2],
       "userId": "1",
       "id": 1
@@ -559,5 +648,3 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
     -> Possíveis erros
 
     - "Missing authorization header" -> Token não informado;
-
-    </br>

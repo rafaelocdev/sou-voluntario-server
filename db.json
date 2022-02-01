@@ -4,93 +4,45 @@
       "email": "ong@mail.com",
       "password": "$2a$10$s2LDHIgDs9Gb9u/VxhmdBOBgM4UCHz6y/gvugbdRhO0NKzC85xBZ.",
       "name": "ONG",
-      "user-type": "ong",
+      "userType": "ong",
+      "category": "education",
+      "cep": "12345-678",
       "id": 1
     },
     {
-      "email": "rafael@mail.com",
-      "password": "$2a$10$s6qGUM5J7ovRU3n/C9f/JeskQRXlnBgPdFb9DftTPtLQTXoTBbhXC",
-      "name": "Rafael Teste",
-      "user-type": "voluntary",
-      "id": 2
-    },
-    {
-      "email": "ong3@mail.com",
-      "password": "$2a$10$tFi.DVsXNqUdudCSb.IpV.SbnvV5T3ZGgiItMKNSnz/BML8QCPVMi",
-      "name": "ONG3",
-      "user-type": "ong",
-      "id": 3
-    },
-    {
-      "email": "thati@mail.com",
-      "password": "$2a$10$NVe7mjwP4yM6lk7IO2XsX.OqzA3zFv64zH7Zv6lxnHG/um0uEbIDu",
-      "name": "Thatiane",
-      "user-type": "voluntary",
-      "id": 4
-    },
-    {
-      "email": "johndoe@mail.com",
-      "password": "$2a$10$esaUGGcMZEMq29lXQoHqiOxJUh3Sfa8/6tv5ix.aCJh5YhGJ9aw2O",
+      "email": "johndoe2@mail.com",
+      "password": "123456",
       "name": "John Doe",
-      "user-type": "voluntary",
-      "id": 5
-    },
-    {
-      "email": "ong1@mail.com",
-      "password": "$2a$10$lPyWyffJjJi2B.ceHBeF7e32f3ffcmKcZRcQEZPTC5LLqGBsg0axu",
-      "name": "ONG1",
-      "user-type": "ong",
-      "category": "education",
-      "ceṕ": "12345-678",
-      "id": 6
+      "userType": "voluntary",
+      "id": 2
     }
   ],
   "events": [
     {
-      "title": "Agente de Biblioteca 9",
+      "title": "Agente de Biblioteca Concluído",
       "description": "Buscamos pessoa para colaborar na organização, catalogação de uma biblioteca organizada e para mantê-la aberta. Vamos juntos!",
-      "work-type": "donation",
+      "workType": "donation",
+      "donationGoal": 2000,
+      "amountDonated": 0,
       "category": "education",
       "state": "São Paulo",
-      "completed": "false",
-      "voluntaries": [
-        2
-      ],
-      "userId": "1",
-      "id": 3
+      "completed": false,
+      "voluntaries": [],
+      "ongName": "ONG",
+      "userId": "1"
     },
     {
-      "title": "Agente de Biblioteca 9",
+      "title": "Agente de Biblioteca Concluído",
       "description": "Buscamos pessoa para colaborar na organização, catalogação de uma biblioteca organizada e para mantê-la aberta. Vamos juntos!",
-      "work-type": "donation",
+      "workType": "volunteering",
+      "donationGoal": 2000,
+      "amountDonated": 0,
       "category": "education",
       "state": "São Paulo",
-      "completed": "false",
+      "completed": false,
       "voluntaries": [],
-      "userId": "1",
-      "id": 4
-    },
-    {
-      "title": "Agente de Biblioteca 9",
-      "description": "Buscamos pessoa para colaborar na organização, catalogação de uma biblioteca organizada e para mantê-la aberta. Vamos juntos!",
-      "work-type": "donation",
-      "category": "education",
-      "state": "São Paulo",
-      "completed": "false",
-      "voluntaries": [],
-      "userId": "1",
-      "id": 5
-    },
-    {
-      "title": "Agente de Biblioteca 9",
-      "description": "Buscamos pessoa para colaborar na organização, catalogação de uma biblioteca organizada e para mantê-la aberta. Vamos juntos!",
-      "work-type": "donation",
-      "category": "education",
-      "state": "São Paulo",
-      "completed": "false",
-      "voluntaries": [],
-      "userId": "1",
-      "id": 6
+      "ongName": "ONG",
+      "userId": "1"
     }
   ]
 }
