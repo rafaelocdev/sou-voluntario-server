@@ -34,9 +34,8 @@
       "category": "education",
       "state": "São Paulo",
       "completed": false,
-      "voluntaries": [
-        3
-      ],
+      "necessaryVoluntaries": 10,
+      "subscribedVoluntaries": [],
       "ongName": "ONG",
       "userId": "1",
       "id": 1
@@ -50,9 +49,8 @@
       "category": "education",
       "state": "São Paulo",
       "completed": false,
-      "voluntaries": [
-        3
-      ],
+      "necessaryVoluntaries": 10,
+      "subscribedVoluntaries": [],
       "ongName": "ONG",
       "userId": "1",
       "id": 2
@@ -66,9 +64,8 @@
       "category": "education",
       "state": "São Paulo",
       "completed": false,
-      "voluntaries": [
-        3
-      ],
+      "necessaryVoluntaries": 10,
+      "subscribedVoluntaries": [],
       "ongName": "ONG",
       "userId": "1",
       "id": 3

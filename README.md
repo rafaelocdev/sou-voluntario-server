@@ -135,10 +135,13 @@ Esta API possui um total de 14 endpoints destinados a cadastro, login e atualiza
       "title": "Agente de Biblioteca ",
       "description": "Buscamos pessoa para colaborar na organização, catalogação de uma biblioteca organizada e para mantê-la aberta. Vamos juntos!",
       "workType": "donation",
+      "donationGoal": 0,
+      "amountDonated": 0,
       "category": "education",
       "state": "São Paulo",
       "completed": false,
-      "voluntaries": [4],
+      "necessaryVoluntaries": 10,
+      "subscribedVoluntaries": [],
       "userId": "1",
       "id": 1
     },
@@ -146,10 +149,13 @@ Esta API possui um total de 14 endpoints destinados a cadastro, login e atualiza
       "title": "Agente de Biblioteca 5",
       "description": "Buscamos pessoa para colaborar na organização, catalogação de uma biblioteca organizada e para mantê-la aberta. Vamos juntos!",
       "workType": "donation",
+      "donationGoal": 0,
+      "amountDonated": 0,
       "category": "education",
       "state": "São Paulo",
       "completed": false,
-      "voluntaries": [],
+      "necessaryVoluntaries": 10,
+      "subscribedVoluntaries": [],
       "userId": "1",
       "id": 2
     }
@@ -248,53 +254,62 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
 
   - ### _Listagem de eventos em que o voluntário está inscrito_
 
-    -> GET /events?voluntaries_like=[:userId]- Formato da requisição: sem corpo
+        -> GET /events?voluntaries_like=[:userId]- Formato da requisição: sem corpo
 
-    -> Status code 201 - Formato da resposta:
+        -> Status code 201 - Formato da resposta:
 
-    ```json
-    [
-      {
-        "title": "Agente de Biblioteca ",
-        "description": "Buscamos pessoa para colaborar na organização, catalogação de uma biblioteca organizada e para mantê-la aberta. Vamos juntos!",
-        "workType": "donation",
-        "category": "education",
-        "state": "São Paulo",
-        "completed": false,
-        "voluntaries": [2],
-        "userId": "1",
-        "id": 1
-      },
-      {
-        "title": "Agente de Biblioteca 5",
-        "description": "Buscamos pessoa para colaborar na organização, catalogação de uma biblioteca organizada e para mantê-la aberta. Vamos juntos!",
-        "workType": "donation",
-        "category": "education",
-        "state": "São Paulo",
-        "completed": false,
-        "voluntaries": [2, 4],
-        "userId": "1",
-        "id": 2
-      },
-      {
-        "title": "Agente de Biblioteca 9",
-        "description": "Buscamos pessoa para colaborar na organização, catalogação de uma biblioteca organizada e para mantê-la aberta. Vamos juntos!",
-        "workType": "donation",
-        "category": "education",
-        "state": "São Paulo",
-        "completed": false,
-        "voluntaries": [2],
-        "userId": "1",
-        "id": 3
-      }
-    ]
-    ```
+        ```json
+        [
+          {
+            "title": "Agente de Biblioteca ",
+            "description": "Buscamos pessoa para colaborar na organização, catalogação de uma biblioteca organizada e para mantê-la aberta. Vamos juntos!",
+            "workType": "donation",
+            "donationGoal": 0,
+            "amountDonated": 0,
+            "category": "education",
+            "state": "São Paulo",
+            "completed": false,
+            "necessaryVoluntaries": 10,
+            "subscribedVoluntaries": [],
+            "userId": "1",
+            "id": 1
+          },
+          {
+            "title": "Agente de Biblioteca 5",
+            "description": "Buscamos pessoa para colaborar na organização, catalogação de uma biblioteca organizada e para mantê-la aberta. Vamos juntos!",
+            "workType": "donation",
+            "donationGoal": 0,
+            "amountDonated": 0,
+            "category": "education",
+            "state": "São Paulo",
+            "completed": false,
+            "necessaryVoluntaries": 10,
+            "subscribedVoluntaries": [2, 4],
+            "userId": "1",
+            "id": 2
+          },
+          {
+            "title": "Agente de Biblioteca 9",
+            "description": "Buscamos pessoa para colaborar na organização, catalogação de uma biblioteca organizada e para mantê-la aberta. Vamos juntos!",
+            "workType": "donation",
+            "donationGoal": 0,
+            "amountDonated": 0,
+            "category": "education",
+            "state": "São Paulo",
+            "completed": false,
+            "necessaryVoluntaries": 10,
+            "subscribedVoluntaries": [],
+            "userId": "1",
+            "id": 3
+          }
+        ]
+        ```
 
-    -> Possíveis erros
+        -> Possíveis erros
 
-    - "Missing authorization header" -> Token não informado;
+        - "Missing authorization header" -> Token não informado;
 
-  <br/>
+    <br/>
 
   - ### _Listagem de eventos em que o voluntário está inscrito filtrados por status_
 
@@ -313,7 +328,8 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
         "category": "education",
         "state": "São Paulo",
         "completed": false,
-        "voluntaries": [5],
+        "necessaryVoluntaries": 10,
+        "subscribedVoluntaries": [],
         "userId": "1",
         "id": 3,
         "workType": "volunteering",
@@ -350,7 +366,8 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
         "category": "education",
         "state": "São Paulo",
         "completed": "false",
-        "voluntaries": [5],
+        "necessaryVoluntaries": 10,
+        "subscribedVoluntaries": [],
         "ong-name": "ONG",
         "userId": "1",
         "id": 1
@@ -364,7 +381,8 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
         "category": "education",
         "state": "São Paulo",
         "completed": "false",
-        "voluntaries": [5],
+        "necessaryVoluntaries": 10,
+        "subscribedVoluntaries": [],
         "ong-name": "ONG",
         "userId": "1",
         "id": 2
@@ -395,7 +413,8 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
         "category": "education",
         "state": "São Paulo",
         "completed": false,
-        "voluntaries": [5],
+        "necessaryVoluntaries": 10,
+        "subscribedVoluntaries": [],
         "userId": "1",
         "id": 1,
         "workType": "volunteering",
@@ -410,7 +429,8 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
         "category": "education",
         "state": "São Paulo",
         "completed": false,
-        "voluntaries": [5],
+        "necessaryVoluntaries": 10,
+        "subscribedVoluntaries": [],
         "userId": "1",
         "id": 2,
         "workType": "volunteering",
@@ -528,7 +548,8 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
       "category": "education",
       "state": "São Paulo",
       "completed": false,
-      "voluntaries": [],
+      "necessaryVoluntaries": 10,
+      "subscribedVoluntaries": [],
       "ongName": "ONG",
       "userId": "1"
     }
@@ -546,7 +567,8 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
       "category": "education",
       "state": "São Paulo",
       "completed": false,
-      "voluntaries": [],
+      "necessaryVoluntaries": 10,
+      "subscribedVoluntaries": [],
       "ongName": "ONG",
       "userId": "1"
       "id": 4
@@ -575,7 +597,8 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
       "category": "education",
       "state": "São Paulo",
       "completed": true,
-      "voluntaries": [5],
+      "necessaryVoluntaries": 10,
+      "subscribedVoluntaries": [],
       "ongName": "ONG"
     }
     // Utilizar somente os campos que sofrerão alteração
@@ -591,7 +614,8 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
       "category": "education",
       "state": "São Paulo",
       "completed": true,
-      "voluntaries": [5],
+      "necessaryVoluntaries": 10,
+      "subscribedVoluntaries": [],
       "userId": "1",
       "id": 3,
       "workType": "volunteering",
@@ -613,7 +637,7 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
 
     ```json
     {
-      "voluntaries": [userId]
+      "subscribedVoluntaries": [userId]
     }
     ```
 
@@ -627,7 +651,8 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
       "category": "education",
       "state": "São Paulo",
       "completed": false,
-      "voluntaries": [2],
+      "necessaryVoluntaries": 10,
+      "subscribedVoluntaries": [],
       "userId": "1",
       "id": 1
     }
@@ -637,7 +662,7 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
 
     - "Missing authorization header" -> Token não informado;
 
-    </br>
+      </br>
 
   - ### _Excluindo um evento_
 
