@@ -141,7 +141,7 @@ Esta API possui um total de 14 endpoints destinados a cadastro, login e atualiza
       "state": "São Paulo",
       "completed": false,
       "necessaryVoluntaries": 10,
-      "subscribedVoluntaries": [],
+      "voluntaries": [],
       "userId": "1",
       "id": 1
     },
@@ -155,7 +155,7 @@ Esta API possui um total de 14 endpoints destinados a cadastro, login e atualiza
       "state": "São Paulo",
       "completed": false,
       "necessaryVoluntaries": 10,
-      "subscribedVoluntaries": [],
+      "voluntaries": [],
       "userId": "1",
       "id": 2
     }
@@ -270,7 +270,7 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
             "state": "São Paulo",
             "completed": false,
             "necessaryVoluntaries": 10,
-            "subscribedVoluntaries": [],
+            "voluntaries": [],
             "userId": "1",
             "id": 1
           },
@@ -284,7 +284,7 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
             "state": "São Paulo",
             "completed": false,
             "necessaryVoluntaries": 10,
-            "subscribedVoluntaries": [2, 4],
+            "voluntaries": [2, 4],
             "userId": "1",
             "id": 2
           },
@@ -298,7 +298,7 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
             "state": "São Paulo",
             "completed": false,
             "necessaryVoluntaries": 10,
-            "subscribedVoluntaries": [],
+            "voluntaries": [],
             "userId": "1",
             "id": 3
           }
@@ -329,7 +329,7 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
         "state": "São Paulo",
         "completed": false,
         "necessaryVoluntaries": 10,
-        "subscribedVoluntaries": [],
+        "voluntaries": [],
         "userId": "1",
         "id": 3,
         "workType": "volunteering",
@@ -367,7 +367,7 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
         "state": "São Paulo",
         "completed": "false",
         "necessaryVoluntaries": 10,
-        "subscribedVoluntaries": [],
+        "voluntaries": [],
         "ong-name": "ONG",
         "userId": "1",
         "id": 1
@@ -382,7 +382,7 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
         "state": "São Paulo",
         "completed": "false",
         "necessaryVoluntaries": 10,
-        "subscribedVoluntaries": [],
+        "voluntaries": [],
         "ong-name": "ONG",
         "userId": "1",
         "id": 2
@@ -414,7 +414,7 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
         "state": "São Paulo",
         "completed": false,
         "necessaryVoluntaries": 10,
-        "subscribedVoluntaries": [],
+        "voluntaries": [],
         "userId": "1",
         "id": 1,
         "workType": "volunteering",
@@ -430,7 +430,7 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
         "state": "São Paulo",
         "completed": false,
         "necessaryVoluntaries": 10,
-        "subscribedVoluntaries": [],
+        "voluntaries": [],
         "userId": "1",
         "id": 2,
         "workType": "volunteering",
@@ -549,7 +549,7 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
       "state": "São Paulo",
       "completed": false,
       "necessaryVoluntaries": 10,
-      "subscribedVoluntaries": [],
+      "voluntaries": [],
       "ongName": "ONG",
       "userId": "1"
     }
@@ -568,7 +568,7 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
       "state": "São Paulo",
       "completed": false,
       "necessaryVoluntaries": 10,
-      "subscribedVoluntaries": [],
+      "voluntaries": [],
       "ongName": "ONG",
       "userId": "1"
       "id": 4
@@ -598,7 +598,7 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
       "state": "São Paulo",
       "completed": true,
       "necessaryVoluntaries": 10,
-      "subscribedVoluntaries": [],
+      "voluntaries": [],
       "ongName": "ONG"
     }
     // Utilizar somente os campos que sofrerão alteração
@@ -615,7 +615,7 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
       "state": "São Paulo",
       "completed": true,
       "necessaryVoluntaries": 10,
-      "subscribedVoluntaries": [],
+      "voluntaries": [],
       "userId": "1",
       "id": 3,
       "workType": "volunteering",
@@ -637,7 +637,7 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
 
     ```json
     {
-      "subscribedVoluntaries": [userId]
+      "voluntaries": [userId]
     }
     ```
 
@@ -652,7 +652,7 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
       "state": "São Paulo",
       "completed": false,
       "necessaryVoluntaries": 10,
-      "subscribedVoluntaries": [],
+      "voluntaries": [],
       "userId": "1",
       "id": 1
     }

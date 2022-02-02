@@ -35,7 +35,7 @@
       "state": "São Paulo",
       "completed": false,
       "necessaryVoluntaries": 10,
-      "subscribedVoluntaries": [],
+      "voluntaries": [],
       "ongName": "ONG",
       "userId": "1",
       "id": 1
@@ -50,7 +50,7 @@
       "state": "São Paulo",
       "completed": false,
       "necessaryVoluntaries": 10,
-      "subscribedVoluntaries": [],
+      "voluntaries": [],
       "ongName": "ONG",
       "userId": "1",
       "id": 2
@@ -65,7 +65,7 @@
       "state": "São Paulo",
       "completed": false,
       "necessaryVoluntaries": 10,
-      "subscribedVoluntaries": [],
+      "voluntaries": [],
       "ongName": "ONG",
       "userId": "1",
       "id": 3
