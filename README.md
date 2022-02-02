@@ -530,8 +530,8 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
     ```js - header
     {
       headers: {
-        Authorization: `Bearer ${token}`;
-        "userType": `${user.[userType]}`
+        Authorization: `Bearer ${accessToken}`;
+        "user-type": `${user.userType}`
       }
     }
     ```
