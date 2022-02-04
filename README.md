@@ -523,19 +523,6 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
 
   - ### _Criação de eventos_
 
-    AVISO: Somente usuários do tipo "ong" podem criar eventos.
-
-    -> No header desta requisição além da chave Authorization, é necessário enviar o tipo de usuário da seguinte maneira:
-
-    ```js - header
-    {
-      headers: {
-        Authorization: `Bearer ${accessToken}`;
-        "user-type": `${user.userType}`
-      }
-    }
-    ```
-
     -> POST /events - Formato da requisição:
 
     ```json
@@ -637,7 +624,7 @@ Para este tipo de endpoint é necessário enviar o token de acesso no header da 
 
     ```json
     {
-      "voluntaries": [userId]
+      "voluntaries": [...oldUserIds , currentUserId]
     }
     ```
 
